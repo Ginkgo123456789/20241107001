@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .profile {
+        position: relative;
+        margin: 0 auto;
+        width: 265px;
+        height: 317px;
+        /* background-color: pink; */
+        overflow: hidden;
+      }
+      .yanami1 {
+        position: absolute;
+        width: 600px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /* 谁做过渡给谁加 */
+        transition: all 0.7s;
+      }
+      .yanami1:hover {
+        margin-left: -265px;
+      }
+      .bar {
+        margin: 0 auto;
+        width: 265px;
+        height: 20px;
+        border: 1px solid skyblue;
+        border-radius: 7px;
+        padding: 1px;
+      }
+      .bar_in {
+        width: 50%;
+        height: 100%;
+        background-color: skyblue;
+        transition: all 0.7s;
+      }
+      .bar:hover .bar_in {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile">
+      <div class="yanami1">
+        <img src="images/yanami1.png" alt="" width="265px" /><img
+          src="images/yanami2.png"
+          alt=""
+          width="265px"
+        />
+      </div>
+    </div>
+    <div class="bar">
+      <div class="bar_in"></div>
+    </div>
+  </body>
+</html>
